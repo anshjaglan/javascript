@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live date and time</title>
+    <style>
+        body {
+            background-color: skyblue;
+            color: black;
+        }
+        .navbar{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            flex-direction: row;
+        }
+        .center{
+            display: flex;
+            height: fit-content;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #clock{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            font-size: 100px;
+            background-color: white;
+            padding: 20px 0px;
+            margin-top: 110px;
+            border-radius:80px;
+        }
+        #currdate{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size : 100px;
+            background-color: white;
+            padding: 20px 0px;
+            margin-top: 10px;
+            border-radius: 80px;
+        }
+
+    </style>
+</head>
+<body>
+   <nav class="navbar">
+    <a href="/" aria-current="page">Home</a>
+    <a target="_blank" href="https://github.com/anshjaglan">Github</a>
+   </nav>
+
+   <div class="center">
+    <div id="banner"><span><h1>Your Local Time and Date</h1></span></div>
+    <div id="clock"> </div>
+    <div id="currdate"></div>
+</div>
+
+<script src="date.js"></script>
+    
+</body>
+</html>
